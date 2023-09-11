@@ -24,8 +24,10 @@ app.use(express.urlencoded({ extended: false })) //convierte los datos que se re
 
 // Global variables
 
-// Routes
+// Routes  (cada archivo de la carpeta routes lo importo acá)
 app.use(require("./routes/index.routes"))
+app.use(require("./routes/notes.routes"))
+
 
 // Statics files (archivos que cualquier cliente puede acceder desde el servidor)
 app.use(express.static(path.join(__dirname, 'public')))

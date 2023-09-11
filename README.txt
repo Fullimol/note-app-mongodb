@@ -12,4 +12,4 @@
    
 
                                       (!) RETOMAR ÚLTIMO VISTO.
-10/09/23 CONTINUAR ==>  https://www.youtube.com/watch?v=Hjp0nTY2dBk&list=PLo5lAe9kQrwqUEXK7oQbzv63KsdODzuAy&index=9
+11/09/23 CONTINUAR ==>  https://www.youtube.com/watch?v=htlt7L8Yl1k&list=PLo5lAe9kQrwqUEXK7oQbzv63KsdODzuAy&index=12
