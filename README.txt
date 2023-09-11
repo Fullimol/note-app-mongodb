@@ -8,3 +8,8 @@
     "helpers": Colocar funciones que hagan algo en la vista (hbs).
     "models": Almacena los schemas de mongoDB.
     "views": Se guardan los archivos hbs o html a enviar al navegador.
+
+   
+
+                                      (!) RETOMAR ÚLTIMO VISTO.
+10/09/23 CONTINUAR ==>  https://www.youtube.com/watch?v=Hjp0nTY2dBk&list=PLo5lAe9kQrwqUEXK7oQbzv63KsdODzuAy&index=9

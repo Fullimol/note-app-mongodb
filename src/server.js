@@ -25,9 +25,7 @@ app.use(express.urlencoded({ extended: false })) //convierte los datos que se re
 // Global variables
 
 // Routes
-app.get("/", (req, res) => {
-    res.render("index")
-})
+app.use(require("./routes/index.routes"))
 
 // Statics files (archivos que cualquier cliente puede acceder desde el servidor)
 app.use(express.static(path.join(__dirname, 'public')))
