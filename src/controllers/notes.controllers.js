@@ -16,12 +16,16 @@ const renderNotes = async (req, res) => {
     res.render('notes/all-notes', { notes }) //El segundo parametro es para pasarle la data de "notes" al .hbs y poder mostrarlo.
 }
 
-const renderEditNotes = (req, res) => {
-    res.send("Render EDIT form")
+const renderEditNotes = async (req, res) => {
+    const note = await Note.findById(req.params.id).lean()
+
+    res.render("notes/edit-note", { note: note })
 }
 
-const updateNote = (req, res) => {
-    res.send("Update Note")
+const updateNote = async (req, res) => {
+    const { title, description } = req.body
+    await Note.findByIdAndUpdate(req.params.id, { title: title, description: description })
+    res.redirect("/notes",)
 }
 
 const deleteNote = async (req, res) => {

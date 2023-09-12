@@ -15,4 +15,4 @@
     "dotenv": Permite asignar variables a valores que queremos ocultar y así usarlos en el código sin que nadie los vea, incluso en los repositorios remotos. Va en el archivo que arranca la aplicacion.
 
                                       (!) RETOMAR ÚLTIMO VISTO.
-12/09/23 CONTINUAR ==>  https://www.youtube.com/watch?v=PQL_iwLKnRg&list=PLo5lAe9kQrwqUEXK7oQbzv63KsdODzuAy&index=14
+12/09/23 CONTINUAR ==>  https://www.youtube.com/watch?v=YR5AmzlO-Ww&list=PLo5lAe9kQrwqUEXK7oQbzv63KsdODzuAy&index=15

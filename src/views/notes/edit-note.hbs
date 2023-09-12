@@ -1,0 +1,24 @@
+<div class="col-md-4 mx-auto">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="text-center">Edit Note</h3>
+        </div>
+        <div class="card-body">
+            <form action="/notes/edit/{{note._id}}?_method=PUT" method="POST"> {{!-- "?_method=DELETE" es
+                parte del midleware "methodOverride" va a entender el metodo "post" como si fuera un
+                "PUT"--}}
+                <input type="hidden" name="_method" value="PUT"> {{!-- Hay que agregar esto para que
+                funcione el midleware --}}
+
+                <input type="text" name="title" class="form-control my-2" value="{{note.title}}">
+                <textarea name="description" class="form-control my-2">{{note.description}}</textarea>
+
+                <div class="d-flex justify-content-center my-3">
+                    <button class="btn btn-primary" type="submit">Save note</button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>
