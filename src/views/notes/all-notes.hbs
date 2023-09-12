@@ -1,11 +1,24 @@
 <div class="row">
     {{#each notes}}
-        <div class="col-md-3">
-            <div class="card">
-                <div class="card-body">
-                    <h4>{{title}}</h4>
+    <div class="col-md-3 m-2">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <h4 class="card-title d-flex justify-content-between align-items-center">{{title}}</h4>
+                    <div class="d-flex align-items-center">
+                        <a href="/notes/edit/{{_id}}"><i class="fa-solid fa-pencil"></i></a>
+                        <form action="/notes/delete/{{_id}}?_method=DELETE" method="POST"> {{!-- "?_method=DELETE" es
+                            parte del midleware "methodOverride" va a entender el metodo "post" como si fuera un
+                            "Delete"--}}
+                            <input type="hidden" name="_method" value="DELETE"> {{!-- Hay que agregar esto para que
+                            funcione el midleware --}}
+                            <button type="submit" class="btn text-danger"> <i class="fa-solid fa-trash"></i> </button>
+                        </form>
+                    </div>
                 </div>
+                <p>{{description}}</p>
             </div>
         </div>
+    </div>
     {{/each}}
 </div>

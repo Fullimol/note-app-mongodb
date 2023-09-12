@@ -9,7 +9,10 @@
     "models": Almacena los schemas de mongoDB.
     "views": Se guardan los archivos hbs o html a enviar al navegador.
 
-   
+*MODULOS/DEPENDENCIAS:
+    "bcryptjs": Sirve para encriptar , en este caso el password y usuario, y no quede guardado tal cual en la BD.
+    "method-override": Es un midleware que permite hacer peticiones DELETE y PUT dentro de un formulario.
+    "dotenv": Permite asignar variables a valores que queremos ocultar y así usarlos en el código sin que nadie los vea, incluso en los repositorios remotos. Va en el archivo que arranca la aplicacion.
 
                                       (!) RETOMAR ÚLTIMO VISTO.
-11/09/23 CONTINUAR ==>  https://www.youtube.com/watch?v=htlt7L8Yl1k&list=PLo5lAe9kQrwqUEXK7oQbzv63KsdODzuAy&index=12
+12/09/23 CONTINUAR ==>  https://www.youtube.com/watch?v=PQL_iwLKnRg&list=PLo5lAe9kQrwqUEXK7oQbzv63KsdODzuAy&index=14
