@@ -41,6 +41,8 @@ app.use((req, res, next) => {
 // Routes  (cada archivo de la carpeta routes lo importo acá)
 app.use(require("./routes/index.routes"))
 app.use(require("./routes/notes.routes"))
+app.use(require("./routes/users.routes"))
+
 
 
 // Statics files (archivos que cualquier cliente puede acceder desde el servidor)
