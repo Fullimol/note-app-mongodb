@@ -13,6 +13,7 @@
     "bcryptjs": Sirve para encriptar , en este caso el password y usuario, y no quede guardado tal cual en la BD.
     "method-override": Es un midleware que permite hacer peticiones DELETE y PUT dentro de un formulario.
     "dotenv": Permite asignar variables a valores que queremos ocultar y así usarlos en el código sin que nadie los vea, incluso en los repositorios remotos. Va en el archivo que arranca la aplicacion.
+    "connect-flash": Nos permite enviar mensajes al reidirigir a otra URL.
 
                                       (!) RETOMAR ÚLTIMO VISTO.
-12/09/23 CONTINUAR ==>  https://www.youtube.com/watch?v=YR5AmzlO-Ww&list=PLo5lAe9kQrwqUEXK7oQbzv63KsdODzuAy&index=15
+13/09/23 CONTINUAR ==>  https://www.youtube.com/watch?v=l4K12TBbwKg&list=PLo5lAe9kQrwqUEXK7oQbzv63KsdODzuAy&index=16

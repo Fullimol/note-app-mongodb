@@ -9,3 +9,7 @@ body{
 .node-color{
     background-color: #A5B381!important;
 }
+
+.alert {
+    width:30%;    
+ }

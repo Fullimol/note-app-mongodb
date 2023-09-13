@@ -3,6 +3,8 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const path = require("path")
 const methodOverride = require("method-override")
+const flash = require("connect-flash")
+const session = require("express-session")
 
 // Inicializaciones
 const app = express()
@@ -23,8 +25,18 @@ app.set("view engine", ".hbs")
 // Middlewares
 app.use(express.urlencoded({ extended: false })) //convierte los datos que se reciben en un objeto .JSON
 app.use(methodOverride('_method')) // sirve para usar "delete" y "put" en el form.
+app.use(session({
+    secret:'secretKey',
+    resave: true,
+    saveUninitialized: true
+}))
+app.use(flash())
 
 // Global variables
+app.use((req, res, next) => { 
+    res.locals.mensaje_exito = req.flash('mensaje_exito') //Recuperar un mensaje flash llamado 'mensaje_exito' y lo guarda como respuesta.
+    next()
+})
 
 // Routes  (cada archivo de la carpeta routes lo importo acá)
 app.use(require("./routes/index.routes"))
