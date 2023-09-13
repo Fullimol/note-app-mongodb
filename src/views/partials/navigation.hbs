@@ -1,11 +1,14 @@
+<div class="text-center fw-bold fs-3 node-color font-monospace">
+    <a class="navbar-brand" href="/"><i class="fa-brands fa-node fs-1"></i> Notes </a>
+</div>
+
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container">
-        <a class="navbar-brand" href="/">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container d-flex justify-content-center text-center">
+        <button class="navbar-toggler bg-success-subtle" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/">Home</a>
@@ -14,15 +17,27 @@
                     <a class="nav-link" href="/about">About</a>
                 </li>
             </ul>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="" class="nav-link text-danger">Login</a>
+
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item fw-bold">
+                    <a class="nav-link" href="/notes"><i class="fa-solid fa-note-sticky px-1"></i>MY NOTES</a>
                 </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link text-danger">Register</a>
+                <li class="nav-item fw-bold">
+                    <a class="nav-link" href="/notes/add"><i class="fa-solid fa-square-plus px-1"></i>NEW NOTE</a>
                 </li>
+                {{!-- <li class="nav-item fw-bold">
+                    <a class="nav-link" href="/notes/add"><i class="fa-solid fa-trash px-1"></i></i>TRASH</a>
+                </li> --}}
             </ul>
 
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Register</a>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>

@@ -1,7 +1,11 @@
 body{
-    background-color: #888888;
+    background-color: #535353;
 }
 
 .navbar{
+    background-color: #A5B381!important;
+}
+
+.node-color{
     background-color: #A5B381!important;
 }
