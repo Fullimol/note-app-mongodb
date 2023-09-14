@@ -34,7 +34,8 @@ app.use(flash())
 
 // Global variables
 app.use((req, res, next) => { 
-    res.locals.mensaje_exito = req.flash('mensaje_exito') //Recuperar un mensaje flash llamado 'mensaje_exito' y lo guarda como respuesta.
+    res.locals.mensage_exito = req.flash('mensage_exito') //Recuperar un mensaje flash llamado 'mensage_exito' y lo guarda como respuesta.
+    res.locals.mensage_error = req.flash('mensage_error')
     next()
 })
 

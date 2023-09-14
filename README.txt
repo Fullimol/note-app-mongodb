@@ -16,4 +16,4 @@
     "connect-flash": Nos permite enviar mensajes al reidirigir a otra URL.
 
                                       (!) RETOMAR ÚLTIMO VISTO.
-13/09/23 CONTINUAR ==>  https://www.youtube.com/watch?v=EpomajNVcMk&list=PLo5lAe9kQrwqUEXK7oQbzv63KsdODzuAy&index=17
+13/09/23 CONTINUAR ==>  https://www.youtube.com/watch?v=NN-Jt6EjFAc&list=PLo5lAe9kQrwqUEXK7oQbzv63KsdODzuAy&index=18
