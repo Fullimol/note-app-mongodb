@@ -14,6 +14,8 @@
     "method-override": Es un midleware que permite hacer peticiones DELETE y PUT dentro de un formulario.
     "dotenv": Permite asignar variables a valores que queremos ocultar y así usarlos en el código sin que nadie los vea, incluso en los repositorios remotos. Va en el archivo que arranca la aplicacion.
     "connect-flash": Nos permite enviar mensajes al reidirigir a otra URL.
+    "passport": Guarda la logica relacionada con la autenticación (login en este caso). Guarda la session en la memoria del servidor si este logra coincidir usuario y contraseña con las que hay en la BD.
+    "passport-local": Nos va a ayudar interactuar con la BD.
 
                                       (!) RETOMAR ÚLTIMO VISTO.
 13/09/23 CONTINUAR ==>  https://www.youtube.com/watch?v=NN-Jt6EjFAc&list=PLo5lAe9kQrwqUEXK7oQbzv63KsdODzuAy&index=18

@@ -1,4 +1,5 @@
 const User = require("../models/User")
+const passport = require('passport')
 
 const renderSignUpForm = (req, res) => {
     res.render('users/signup')
@@ -29,7 +30,6 @@ const signUp = async (req, res) => {
             // req.flash("mensage_exito", "Usuario registrado con éxito") //NO ESTÁ FUNCIONANDO EL MENSAGE DE EXITO
             res.redirect("signin")
         }
-
     }
 }
 
@@ -37,12 +37,18 @@ const renderSignInpForm = (req, res) => {
     res.render('users/signin')
 }
 
-const signIn = (req, res) => {
-    res.send("sign In")
-}
+const signIn = passport.authenticate("local", { //va a hacer la autenticacion en el "LocalStrategy" definida en passport.js | se pone "local" por defecto.
+    failureRedirect: '/users/signin', // si no coincide la autenticacion, osea no se pudo logear.
+    successRedirect: '/notes', // si está todo okey, se logea.
+    failureFlash: true //si ocurre un error se usa Flash
+})
 
 const logout = (req, res) => {
-    res.send("log out")
+    req.logout((err) => { // Eliminamos la sesión que contiene el ID del usuario logueado con esta función de Passport. (la funcion debe tener esta forma ya que debe ser async.)
+        if (err) { return next(err); }
+        req.flash("mensage_exito", "Seción cerrada.");
+        res.redirect("/");
+    });
 }
 
 module.exports = {

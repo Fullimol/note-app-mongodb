@@ -15,7 +15,7 @@ UserSchema.methods.encriptarPass = async password => {
 
 //Esto es para comparar la password encriptada que ingresa el usuario con la password encriptada de la base de datos.
 UserSchema.methods.matchPass = async function (password) { //(!)No se usa arrow porque sino no puedo usar "this" y acceder al valor de la password del schema.
-    await bcrypt.compare(password, this.password)
+   return await bcrypt.compare(password, this.password)
 }
 
 module.exports = model('User', UserSchema)
