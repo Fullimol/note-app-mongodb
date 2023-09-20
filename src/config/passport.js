@@ -11,7 +11,7 @@ passport.use(new LocalStrategy({
     //esta funcion toma los datos de arriva y se hace la validación.
 
     const user = await User.findOne({ email }) // buscamos el user en el model de la BD mongoose.
-   
+
     if (!user) {
         return doneCallback(null, false, { message: "No se encontro el usuario" })
         //este call recibe ("un error", "si existe el usuario", "algunas opciones")
@@ -32,7 +32,7 @@ passport.serializeUser((user, doneCallback) => {
 })
 
 //Cuando el usuario comience a navegar y ya esté registrado, va a hacer consultas a la BD para ver si ese id tiene autorización.
-passport.deserializeUser((id, doneCallback) => {
-        const user = User.findOne({ _id: id });
-        doneCallback(null, user);
+passport.deserializeUser(async (id, doneCallback) => {
+    const user = await User.findOne({ _id: id });
+    doneCallback(null, user);
 });
