@@ -46,7 +46,7 @@ const signIn = passport.authenticate("local", { //va a hacer la autenticacion en
 const logout = (req, res) => {
     req.logout((err) => { // Eliminamos la sesión que contiene el ID del usuario logueado con esta función de Passport. (la funcion debe tener esta forma ya que debe ser async.)
         if (err) { return next(err); }
-        req.flash("mensage_exito", "Seción cerrada.");
+        req.flash("mensage_exito", "Sesión cerrada.");
         res.redirect("/");
     });
 }

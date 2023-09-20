@@ -18,4 +18,4 @@
     "passport-local": Nos va a ayudar interactuar con la BD.
 
                                       (!) RETOMAR ÚLTIMO VISTO.
-13/09/23 CONTINUAR ==>  https://www.youtube.com/watch?v=NN-Jt6EjFAc&list=PLo5lAe9kQrwqUEXK7oQbzv63KsdODzuAy&index=18
+19/09/23 CONTINUAR ==>  https://www.youtube.com/watch?v=EdBZQ6IdlYs&list=PLo5lAe9kQrwqUEXK7oQbzv63KsdODzuAy&index=19
