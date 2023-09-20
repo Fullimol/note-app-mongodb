@@ -16,6 +16,3 @@
     "connect-flash": Nos permite enviar mensajes al reidirigir a otra URL.
     "passport": Guarda la logica relacionada con la autenticación (login en este caso). Guarda la session en la memoria del servidor si este logra coincidir usuario y contraseña con las que hay en la BD.
     "passport-local": Nos va a ayudar interactuar con la BD.
-
-                                      (!) RETOMAR ÚLTIMO VISTO.
-19/09/23 CONTINUAR ==>  https://www.youtube.com/watch?v=EdBZQ6IdlYs&list=PLo5lAe9kQrwqUEXK7oQbzv63KsdODzuAy&index=19
